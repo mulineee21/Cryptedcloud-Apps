@@ -1,0 +1,17 @@
+#!/bin/bash
+# Tor Portal Launch Script - STRICT TOR MODE
+# Este script lanza exclusivamente Tor Browser.
+
+URL="http://sf7fefc34xkrqtsptpr52jt5avqkotwnvvhs5nahpx3mewqyteyvbnqd.onion"
+
+if command -v torbrowser-launcher >/dev/null 2>&1; then
+    # Lanzar Tor Browser con la URL
+    exec torbrowser-launcher "$URL"
+else
+    # Si no está instalado, mostrar error crítico y NO abrir otro navegador
+    if command -v notify-send >/dev/null 2>&1; then
+        notify-send --urgency=critical "Error: Tor Browser no encontrado" "Este acceso directo requiere 'torbrowser-launcher' para abrir la sesión de forma segura."
+    fi
+    echo "ERROR: torbrowser-launcher no está instalado. Instálalo para usar este acceso directo." >&2
+    exit 1
+fi
