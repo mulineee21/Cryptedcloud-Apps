@@ -1,0 +1,10 @@
+Package: tor-portal
+Version: 1.0
+Section: net
+Priority: optional
+Architecture: all
+Depends: torbrowser-launcher, libnotify-bin
+Maintainer: Joel <joel@example.com>
+Description: A shortcut to a specific Tor website
+ This package provides a desktop entry and a launch script
+ to open the Tor Browser at a predefined onion address.
