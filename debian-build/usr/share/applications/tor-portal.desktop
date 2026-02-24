@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tor Portal
+Comment=Access Tor securely
+Exec=/usr/bin/tor-portal
+Icon=tor-portal
+Categories=Network;WebBrowser;
+Terminal=false
+StartupNotify=true
