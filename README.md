@@ -3,7 +3,7 @@ Aplicacion oficial de Cryptedcloud para acceder a nuestro servicio privado en la
 
 
 
-**SUS FUNCIONES
+**SUS FUNCIONES**
   - Instala un cliente Tor en el equipo
   - Instala todas las dependencias faltantes
   - Crea un icono de applicacion (CryptedCloud) para acceder de manera más facil al servicio se vera como una aplicacion normal
@@ -17,3 +17,9 @@ Estan en versiones como la de Linux, Windows, Android
 
 
 Para más información visite https://cryptedcloud.netlify.app 
+
+
+**NOTAS IMPPORTANTES**
+
+Para crear el instalador en windows se necesita la carpeta de tor dentro del directorio principal, para ello se va a la pagina de descarga oficial de tor y se instala 
+(https://www.torproject.org/es/download/) 
